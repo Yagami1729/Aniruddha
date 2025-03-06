@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #1A73E8; /* Google Blue */
-    --secondary-color: #34A853; /* Google Green */
-    --accent-color: #FBBC05; /* Google Yellow */
+    --primary-color: #000000; /* Black */
+    --secondary-color: #333333; /* Dark gray */
+    --accent-color: #555555; /* Light gray */
     --bg-color: #FFFFFF; /* White background */
-    --text-color: #202124; /* Dark text */
+    --text-color: #000000; /* Black text */
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
     --border-radius: 12px; /* Rounded corners */
 }
@@ -47,7 +47,7 @@ nav {
 }
 
 .nav-list a:hover {
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 /* Hero Section */
@@ -57,8 +57,7 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: white;
+    background: var(--bg-color);
 }
 
 .hero-content {
@@ -74,10 +73,11 @@ nav {
 .hero-subtitle {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    color: var(--secondary-color);
 }
 
 .highlight {
-    color: var(--accent-color);
+    color: var(--primary-color);
     font-weight: bold;
 }
 
@@ -99,7 +99,7 @@ h2 {
 }
 
 /* Lists */
-.experience-list, .project-list, .blog-list, .education-section, .contact-methods {
+.experience-list, .project-list, .blog-list, .education-section, .academic-section, .contact-methods {
     list-style: none;
 }
 

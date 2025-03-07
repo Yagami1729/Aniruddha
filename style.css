@@ -19,6 +19,7 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--bg-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Navigation */
@@ -135,11 +136,11 @@ h2 {
 }
 
 /* Lists */
-.experience-list, .project-list, .blog-list, .education-section, .academic-section, .contact-methods {
+.experience-list, .project-list, .education-section, .academic-section, .contact-methods {
     list-style: none;
 }
 
-.experience-list li, .project-list li, .blog-list li, .timeline-item, .contact-info, .social-links {
+.experience-list li, .project-list li, .timeline-item, .contact-info, .social-links {
     margin-bottom: 2rem;
     padding: 1.5rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -147,12 +148,12 @@ h2 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.experience-list li:hover, .project-list li:hover, .blog-list li:hover, .timeline-item:hover, .contact-info:hover, .social-links:hover {
+.experience-list li:hover, .project-list li:hover, .timeline-item:hover, .contact-info:hover, .social-links:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow);
 }
 
-.experience-list h3, .project-list h3, .blog-list h3, .timeline-item h3, .contact-info h3, .social-links h3 {
+.experience-list h3, .project-list h3, .timeline-item h3, .contact-info h3, .social-links h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     color: var(--primary-color);
@@ -241,4 +242,34 @@ h2 {
     .hero-subtitle {
         font-size: 1.2rem;
     }
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .nav-list a {
+    color: #ffffff;
+}
+
+body.dark-mode .hero-subtitle {
+    color: #cccccc;
+}
+
+body.dark-mode .resume-button,
+body.dark-mode .project-list a,
+body.dark-mode .social-card {
+    background: #333333;
+}
+
+body.dark-mode .resume-button:hover,
+body.dark-mode .project-list a:hover,
+body.dark-mode .social-card:hover {
+    background: #444444;
+}
+
+body.dark-mode .site-footer {
+    background: #333333;
 }

@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #000000; /* Black */
-    --secondary-color: #333333; /* Dark gray */
-    --accent-color: #555555; /* Light gray */
-    --bg-color: #FFFFFF; /* White background */
-    --text-color: #000000; /* Black text */
+    --primary-color: #007BFF; /* Blue */
+    --secondary-color: #6c757d; /* Gray */
+    --accent-color: #f8f9fa; /* Light gray */
+    --bg-color: #ffffff; /* White background */
+    --text-color: #343a40; /* Dark text */
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    --border-radius: 12px; /* Rounded corners */
+    --border-radius: 8px; /* Rounded corners */
 }
 
 * {
@@ -48,7 +48,7 @@ nav {
 }
 
 .nav-list a:hover {
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 /* Hero Section */
@@ -246,30 +246,30 @@ h2 {
 
 /* Dark Mode */
 body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
+    background-color: #343a40;
+    color: #f8f9fa;
 }
 
 body.dark-mode .nav-list a {
-    color: #ffffff;
+    color: #f8f9fa;
 }
 
 body.dark-mode .hero-subtitle {
-    color: #cccccc;
+    color: #adb5bd;
 }
 
 body.dark-mode .resume-button,
 body.dark-mode .project-list a,
 body.dark-mode .social-card {
-    background: #333333;
+    background: #007BFF;
 }
 
 body.dark-mode .resume-button:hover,
 body.dark-mode .project-list a:hover,
 body.dark-mode .social-card:hover {
-    background: #444444;
+    background: #0056b3;
 }
 
 body.dark-mode .site-footer {
-    background: #333333;
+    background: #007BFF;
 }
